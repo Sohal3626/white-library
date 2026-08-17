@@ -1,0 +1,83 @@
+.redesigned-books .book-card {
+  min-width: 0 !important;
+  box-sizing: border-box !important;
+}
+
+.redesigned-books .book-info,
+.redesigned-books .book-actions {
+  min-width: 0 !important;
+}
+
+.redesigned-books .book-info h3 {
+  overflow-wrap: anywhere;
+}
+
+.redesigned-books .book-actions,
+.shelf-slot .book-actions {
+  grid-column: 1 / -1 !important;
+  align-self: stretch !important;
+  width: 100% !important;
+  display: grid !important;
+  grid-template-columns: minmax(190px, 1.35fr) minmax(145px, 1fr) minmax(170px, 1fr) !important;
+  gap: 8px !important;
+  padding-top: 11px !important;
+  box-sizing: border-box !important;
+}
+
+.redesigned-books .book-actions label,
+.redesigned-books .book-actions select,
+.redesigned-books .book-actions > button {
+  width: 100% !important;
+  min-width: 0 !important;
+  box-sizing: border-box !important;
+}
+
+.redesigned-books .book-actions > button,
+.redesigned-books .book-actions > button small {
+  writing-mode: horizontal-tb !important;
+  text-orientation: mixed !important;
+  word-break: keep-all !important;
+  overflow-wrap: normal !important;
+  white-space: normal !important;
+  line-height: 1.35 !important;
+}
+
+.redesigned-books .book-actions > button {
+  min-height: 52px !important;
+  margin: 0 !important;
+  padding: 9px 12px !important;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.redesigned-books .shelf-slot .book-actions {
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) !important;
+}
+
+.redesigned-books .shelf-slot .book-actions label {
+  grid-column: 1 / -1 !important;
+}
+
+@media (max-width: 760px) {
+  .redesigned-books .book-actions,
+  .shelf-slot .book-actions {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) !important;
+  }
+
+  .redesigned-books .book-actions label {
+    grid-column: 1 / -1 !important;
+  }
+}
+
+@media (max-width: 420px) {
+  .redesigned-books .book-actions,
+  .shelf-slot .book-actions {
+    grid-template-columns: 1fr !important;
+  }
+
+  .redesigned-books .book-actions label,
+  .redesigned-books .book-actions .burn-book {
+    grid-column: 1 !important;
+  }
+}

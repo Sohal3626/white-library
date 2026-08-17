@@ -1,0 +1,15 @@
+{
+  "name": "webgame",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node server.mjs"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "typescript": "^6.0.3"
+  },
+  "private": true
+}
